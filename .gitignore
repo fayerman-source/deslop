@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+AI Skill_*.md
+
+# Agentic / local running workspace logs
+.agents/
+.gemini/
+.claude/
+*.log
+scratch/
