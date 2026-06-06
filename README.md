@@ -83,6 +83,24 @@ Claude Code auto-discovers the skill and applies it when relevant; you can also 
 
 ---
 
+### Codex CLI
+Codex CLI also supports native [Agent Skills](https://developers.openai.com/codex/skills) — it scans `.agents/skills/` directories for a `SKILL.md` with `name`/`description` frontmatter (keep the frontmatter; Codex uses it for discovery). Clone into a skills directory:
+
+* **Project-scoped:**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git .agents/skills/deslop
+  ```
+* **User-scoped (all repositories):**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git ~/.agents/skills/deslop
+  ```
+
+Invoke it with `$deslop`, or let Codex activate it when the task matches the skill description. (Restart Codex if a freshly cloned skill doesn't appear.)
+
+**Alternative (always-on):** copy the body of `SKILL.md` (without the YAML frontmatter) into `AGENTS.md` at your repo root, or `~/.codex/AGENTS.md` for global guidance — Codex reads these as standing instructions.
+
+---
+
 ### Other Tools (Aider, Cursor, Copilot, …)
 Tools without a skills system can still use these guidelines — load `SKILL.md` as the tool's instructions or rules file:
 
