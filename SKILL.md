@@ -98,42 +98,42 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
 
 ### 9. Statutory Interpretation Canons
 * **Ejusdem Generis**: When a general word follows specific words in a list, interpret the general word in context of the specific ones (e.g., "cars, trucks, and other vehicles" - "other vehicles" limited to transportation).
-* **Noscitur a Sociis**: Words derive meaning from their linguistic neighbors (e.g., "bank, river, and stream" - all refer to financial institutions vs. bodies of water based on context).
+* **Noscitur a Sociis**: A word's meaning is informed by the words around it (e.g., in "bank, river, and stream," "bank" means a riverbank, not a financial institution, because its neighbors are bodies of water).
 * **Expressio Unius Est Exclusio Alterius**: Mentioning specific items may imply exclusion of unmentioned ones - preserve intentional gaps.
 
 ---
- 
- ## IV. Syntactic Pitfalls & Ambiguity Resolution
- 
- ### 10. Eradication of "Shall"
+
+## IV. Syntactic Pitfalls & Ambiguity Resolution
+
+### 10. Eradication of "Shall"
 * **Rule**: Complete eradication of the word "shall." Replace it based on the exact category of meaning:
   * **Obligation/Duty**: Use **must** (e.g., *"The Tenant must pay the rent"*).
   * **Future Action/Prediction**: Use **will** (e.g., *"The lease will terminate on Dec 31"*).
   * **Permission**: Use **may** (e.g., *"The Tenant may keep a pet"*).
   * **Status/Condition**: Use **is/are** (e.g., *"The contract price is [amount]"*).
 
-### 10. The Disjunctive/Conjunctive Paradox ("And/Or")
+### 11. The Disjunctive/Conjunctive Paradox ("And/Or")
 * **Rule**: Completely ban the phrase "and/or." Replace it with explicit logic:
   * **Inclusive**: Use *"A or B, or both"* (e.g., *"damages caused by negligence, willful misconduct, or both"*).
   * **Exclusive**: Use *"either A or B, but not both"*.
 
-### 11. Eradicating Provisos ("Provided That")
+### 12. Eradicating Provisos ("Provided That")
 * **Rule**: Ban "provided that" when used as a proviso (mid-sentence exception or afterthought). Allow at sentence beginning only as a condition introducer.
-* **Transformation**: 
+* **Transformation**:
   * For mid-sentence provisos: End previous sentence. Start new sentence with "But if" (exception) or "If" (condition).
   * For sentence-start conditions: Replace with "If [condition], [result]."
 
-### 12. Ambiguous Modifiers & The Last Antecedent
+### 13. Ambiguous Modifiers & The Last Antecedent
 * **Rule**: When a trailing modifier (e.g., *"incurred outside the state"*) is attached to a series of elements, it creates ambiguity.
 * **Resolution**:
   * If the modifier applies to the **entire series**, relocate it to the introductory clause (premodification) or format as a vertical, tabulated list.
   * If the modifier applies only to the **final item**, rephrase the sentence or place the item elsewhere to isolate it.
 
-### 13. Conversational Sentence Openers
+### 14. Conversational Sentence Openers
 * **Rule**: Avoid stuffy, multi-syllable transitions like *However, Furthermore, Moreover, Consequently, Therefore*.
 * **Alternative**: Use short, punchy, conversational conjunctions to begin sentences (*But, And, So, Yet*).
 
-### 14. Pronoun and Modifier Reference
+### 15. Pronoun and Modifier Reference
 * **Pronouns**: Replace *"such [noun]"* with *"this," "that," "these,"* or *"the"*. Replace *"the same"* as a pronoun with *"it"* or *"them"*.
 * **Singular They**: Acceptable for gender neutrality, but if it introduces ambiguity (multiple singular and plural entities), bypass it by repeating the specific noun.
 
@@ -141,12 +141,12 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
 
 ## V. Editorial Standards & Typography
 
-### 15. Typographic Design & Layout Rules (SEC Standards)
+### 16. Typographic Design & Layout Rules (SEC Standards)
 * **Font Selection**: Enforce Serif fonts (such as **Garamond**, **Palatino**, or **Georgia**) for extensive body text to improve tracking. Prohibit Times New Roman as a default. Use Sans Serif (such as **Arial** or **Calibri**) for headings.
 * **Margin Alignment**: Enforce Left-Aligned (Ragged Right). Prohibit fully justified text.
 * **Emphasis**: Prohibit all-caps and underlining for emphasis. Use bold styling sparingly (exception: conspicuous UCC warranty disclaimers).
 
-### 16. ABA Section of Litigation Punctuation & Style
+### 17. ABA Section of Litigation Punctuation & Style
 * **That vs. Which**: Use *"that"* (without a comma) for restrictive clauses; use *"which"* (always preceded by a comma) for nonrestrictive, parenthetical clauses.
 * **Quotation Punctuation**: Place commas and periods *inside* quotation marks. Place colons, semicolons, and footnote numbers *outside* quotation marks.
 * **Block Quotes**: For quotes containing 50 words or more, format as an indented, single-spaced block without surrounding quotation marks. Keep quotes under 50 words inline.
@@ -160,19 +160,19 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
 
 ## VI. Advanced Translation Logic
 
-### 17. Quantitative Readability Target
+### 18. Quantitative Readability Target
 * **Rule**: Strive to achieve a minimum Flesch Reading Ease score of **40** or higher on all public or consumer-facing texts.
 
-### 18. Numerical Consistency
+### 19. Numerical Consistency
 * **Rule**: Spell out numbers 1-9; use digits for 10+. In any single list or series, if one number is 10+ and rendered as digits, all numbers in that list must be digits.
- 
-### 19. Eradication of "Elegant Variation"
+
+### 20. Eradication of "Elegant Variation"
 * **Rule**: Maintain absolute terminological consistency. If a contract refers to a *"vehicle"* in one section, do not refer to it as an *"automobile"* or *"car"* in another. Locking vocabulary prevents accidental changes in legal meaning.
- 
-### 20. Dialogue Tag Relocation
+
+### 21. Dialogue Tag Relocation
 * **Rule**: In litigation briefs, avoid beginning multiple sentences with repetitive tags (e.g., *"The Plaintiff argues that..."*). Move the tag to the middle or end of the sentence (e.g., *"The statute is unambiguous, the Plaintiff asserts"*).
- 
-### 21. Civility and Professionalism (California Guidelines)
+
+### 22. Civility and Professionalism (California Guidelines)
 * **Rule**: Strip away aggressive, combative ad hominem attacks. Keep tone objective, respectful, and focused strictly on legal and factual arguments.
 
 ---

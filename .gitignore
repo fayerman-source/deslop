@@ -10,3 +10,9 @@ AI Skill_*.md
 .claude/
 *.log
 scratch/
+
+# Agent guidance docs — kept local only. This skill is cloned into other
+# projects' skill folders, where a shipped AGENTS.md/CLAUDE.md would bleed
+# repo-development guidance into the consumer's agent context.
+AGENTS.md
+CLAUDE.md

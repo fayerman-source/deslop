@@ -137,7 +137,29 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 
 ---
 
-## 12. Terms of Art Distinctions (When to Preserve)
+## 12. Syntactic Pitfalls & Ambiguities
+
+### A. Eradication of "Shall"
+* **Before**: The Buyer *shall* pay the purchase price upon closing. The Broker *shall* receive 3% commission, and the agreement *shall* be governed by New York law.
+* **After**: The Buyer *must* pay the purchase price upon closing. The Broker *will* receive a 3% commission, and the agreement *is* governed by New York law.
+* *Mechanics*: "Shall" is replaced with **must** for buyer's obligation, **will** for broker's future receipt, and **is** for the legal status of the governing law.
+
+### B. Resolving "And/Or"
+* **Before**: The Licensee is liable for any claims resulting from copyright infringement *and/or* trademark infringement.
+* **After**: The Licensee is liable for any claims resulting from copyright infringement, trademark infringement, *or both*.
+
+### C. Eradicating Provisos ("Provided That")
+* **Before**: The Seller will ship the goods within ten days, *provided that* if there is a severe weather event, the shipment may be delayed.
+* **After**: The Seller will ship the goods within ten days. *But if* there is a severe weather event, the shipment may be delayed.
+
+### D. Curing Trailing Modifiers
+* **Before**: The Employer will cover fees for educational seminars, certification courses, and industry conventions *held in the state of Texas*.
+* **After**: The Employer will cover the following expenses *if they are held in Texas*: (1) educational seminars, (2) certification courses, and (3) industry conventions.
+* *Mechanics*: Prevents ambiguity about whether "held in the state of Texas" applies to all three items or only to industry conventions.
+
+---
+
+## 13. Terms of Art Distinctions (When to Preserve)
 
 ### A. "Best Efforts" vs. "Reasonable Efforts"
 * **Before**: The Developer shall use its best efforts, reasonable efforts, and good faith to complete the project on time.
@@ -157,11 +179,11 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 ### D. "Representations" vs. "Warranties"
 * **Before**: The Seller represents and warrants that the product conforms to specifications and will perform satisfactorily.
 * **After**: The Seller **represents** that the product conforms to the specifications attached. The Seller **warrants** that the product will perform satisfactorily for 90 days.
-* *Mechanics*: Representations are past/factual statements (truth at time of speaking). Warrantizations are promises for the future.
+* *Mechanics*: Representations are past or present factual statements (true when made). Warranties are promises about future performance.
 
 ---
 
-## 13. Semantic Divide: Terms of Art Preservation
+## 14. Semantic Divide: Terms of Art Preservation
 
 ### A. UCC Conspicuous Disclaimer
 * **Before**: The Seller makes no warranties that the products will pass without objection in the trade or are of average, acceptable quality.
