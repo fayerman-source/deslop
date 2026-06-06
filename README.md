@@ -32,38 +32,23 @@ It incorporates the key tenets of plain-language legal drafting (inspired by Bry
 
 ## 🚀 Installation
 
-This skill uses the portable `SKILL.md` (Agent Skills) format, natively supported by both **Gemini CLI / Antigravity** and **Claude Code**. See the framework-specific instructions below.
+This skill uses the portable `SKILL.md` (Agent Skills) format, natively supported by **Antigravity CLI** (Google's successor to Gemini CLI), **Claude Code**, and **Codex CLI**. See the framework-specific instructions below.
 
-### Gemini CLI / Antigravity
-
-#### Option 1: Native Installation (Recommended)
-Install the skill directly using the Gemini CLI:
-
-* **Global:**
-  ```bash
-  gemini skills install https://github.com/fayerman-source/deslop.git
-  ```
-* **Workspace-specific:**
-  ```bash
-  gemini skills install https://github.com/fayerman-source/deslop.git --scope workspace
-  ```
-
-> **Non-interactive installs:** add `--consent` (e.g. `--scope workspace --consent`) to auto-accept the security prompt in scripts or CI.
-
-#### Option 2: Manual Git Clone
-If you prefer to clone manually, clone the repository into the appropriate path:
+### Antigravity CLI
+Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories — clone the repository into one:
 
 * **Workspace-specific:**
   ```bash
-  git clone https://github.com/fayerman-source/deslop.git .gemini/skills/deslop
+  git clone https://github.com/fayerman-source/deslop.git .agents/skills/deslop
   ```
-  *(`.agents/skills/deslop` also works — Gemini scans it for backwards compatibility.)*
-* **Global:**
+* **Global (all workspaces):**
   ```bash
   git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
   ```
 
-> **Inside a session:** there is no install-from-URL slash command, but you can manage skills live — `/skills list` to see them, `/skills reload` after adding one, and `/skills link <path> --scope user|workspace` to link a locally cloned copy.
+The skill is discovered automatically; restart the CLI or reload skills if it doesn't appear. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax — the manual clone above works either way.
+
+> **Legacy — Gemini CLI (until June 18, 2026):** Gemini CLI installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope). After that date Gemini CLI remains only for Gemini Code Assist Standard/Enterprise license holders.
 
 ---
 
