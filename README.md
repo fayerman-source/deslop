@@ -32,21 +32,63 @@ It incorporates the key tenets of plain-language legal drafting (inspired by Bry
 
 ## 🚀 Installation
 
-You can install this skill either for a specific project workspace or globally for all your projects.
+This skill uses the portable `SKILL.md` (Agent Skills) format, natively supported by both **Gemini CLI / Antigravity** and **Claude Code**. See the framework-specific instructions below.
 
-### Option 1: Workspace Installation (Project-Specific)
-Clone this repository directly into the `.agents/skills` folder of your project workspace:
+### Gemini CLI / Antigravity
 
-```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/deslop.git .agents/skills/deslop
-```
+#### Option 1: Native Installation (Recommended)
+Install the skill directly using the Gemini CLI:
 
-### Option 2: Global Installation
-Clone this repository into the global skills directory of your agent configuration (e.g., for Gemini CLI/Antigravity):
+* **Global:**
+  ```bash
+  gemini skills install https://github.com/fayerman-source/deslop.git
+  ```
+* **Workspace-specific:**
+  ```bash
+  gemini skills install https://github.com/fayerman-source/deslop.git --scope workspace
+  ```
 
-```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/deslop.git ~/.gemini/config/skills/deslop
-```
+> **Non-interactive installs:** add `--consent` (e.g. `--scope workspace --consent`) to auto-accept the security prompt in scripts or CI.
+
+#### Option 2: Manual Git Clone
+If you prefer to clone manually, clone the repository into the appropriate path:
+
+* **Workspace-specific:**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git .gemini/skills/deslop
+  ```
+  *(`.agents/skills/deslop` also works — Gemini scans it for backwards compatibility.)*
+* **Global:**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
+  ```
+
+---
+
+### Claude Code
+Claude Code supports this skill natively through its [Agent Skills](https://code.claude.com/docs/en/skills) system — `SKILL.md` already carries the required `name`/`description` frontmatter. Clone the repository into a skills directory:
+
+* **Personal (all projects):**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git ~/.claude/skills/deslop
+  ```
+* **Project-specific:**
+  ```bash
+  git clone https://github.com/fayerman-source/deslop.git .claude/skills/deslop
+  ```
+
+Claude Code auto-discovers the skill and applies it when relevant; you can also invoke it explicitly with `/deslop`.
+
+**Alternative (without skills):** Append the contents of `SKILL.md` to a `CLAUDE.md` file — your project-root `CLAUDE.md` for a single project, or `~/.claude/CLAUDE.md` for all projects. Claude Code loads both automatically as instructions.
+
+---
+
+### Other Tools (Aider, Cursor, Copilot, …)
+Tools without a skills system can still use these guidelines — load `SKILL.md` as the tool's instructions or rules file:
+
+* **Aider:** `aider --read SKILL.md` (or add `read: SKILL.md` to `.aider.conf.yml`).
+* **Cursor:** copy `SKILL.md` into `.cursor/rules/`.
+* **GitHub Copilot:** paste the rules into `.github/copilot-instructions.md`.
 
 ---
 
