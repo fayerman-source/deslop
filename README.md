@@ -63,6 +63,8 @@ If you prefer to clone manually, clone the repository into the appropriate path:
   git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
   ```
 
+> **Inside a session:** there is no install-from-URL slash command, but you can manage skills live — `/skills list` to see them, `/skills reload` after adding one, and `/skills link <path> --scope user|workspace` to link a locally cloned copy.
+
 ---
 
 ### Claude Code
@@ -78,6 +80,8 @@ Claude Code supports this skill natively through its [Agent Skills](https://code
   ```
 
 Claude Code auto-discovers the skill and applies it when relevant; you can also invoke it explicitly with `/deslop`.
+
+> **Inside a session:** Claude Code has no slash command to install a standalone skill from a URL. Either run the clone above, or ask Claude to do it for you ("clone deslop into `~/.claude/skills`"); restart Claude Code afterward so it picks up the new skill.
 
 **Alternative (without skills):** Append the contents of `SKILL.md` to a `CLAUDE.md` file — your project-root `CLAUDE.md` for a single project, or `~/.claude/CLAUDE.md` for all projects. Claude Code loads both automatically as instructions.
 
@@ -96,6 +100,8 @@ Codex CLI also supports native [Agent Skills](https://developers.openai.com/code
   ```
 
 Invoke it with `$deslop`, or let Codex activate it when the task matches the skill description. (Restart Codex if a freshly cloned skill doesn't appear.)
+
+> **Inside a session:** use the built-in `$skill-installer` skill — run `$skill-installer` and ask it to install deslop from the repository URL (it can pull skills from external repos); browse what's installed with `/skills`.
 
 **Alternative (always-on):** copy the body of `SKILL.md` (without the YAML frontmatter) into `AGENTS.md` at your repo root, or `~/.codex/AGENTS.md` for global guidance — Codex reads these as standing instructions.
 
