@@ -98,7 +98,7 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
 
 ### 9. Statutory Interpretation Canons
 * **Ejusdem Generis**: When a general word follows specific words in a list, interpret the general word in context of the specific ones (e.g., "cars, trucks, and other vehicles" - "other vehicles" limited to transportation).
-* **Noscitur a Sociis**: A word's meaning is informed by the words around it (e.g., in "banks, rivers, and streams," "bank" means a riverbank, not a financial institution, because its neighbors are bodies of water).
+* **Noscitur a Sociis**: A word's meaning is informed by the words around it (e.g., in "bank, river, and stream," "bank" means a riverbank, not a financial institution, because its neighbors are bodies of water).
 * **Expressio Unius Est Exclusio Alterius**: Mentioning specific items may imply exclusion of unmentioned ones - preserve intentional gaps.
 
 ---
