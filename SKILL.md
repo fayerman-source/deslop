@@ -83,15 +83,29 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
   * Retain *implied warranty of merchantability* and *implied warranty of fitness for a particular purpose*.
   * *UCC Disclaimer Rule*: UCC § 2-316 mandates that disclaiming the implied warranty of merchantability must specifically mention the word **"merchantability"** and must be **conspicuous** (e.g., formatted in bold, all-caps, or contrasting size).
 * **Statutory Thresholds**: Retain *gross negligence* when specified by statute (e.g., assumption of risk or government immunity waivers).
+* **Contract Drafting Terms of Art**: Preserve the following terms with precise meanings:
+  * *time is of the essence* - fundamental contract doctrine making time a condition, not just a factor
+  * *act of God* - standard force majeure term for unavoidable natural events
+  * *best efforts*, *reasonable efforts*, *commercially reasonable efforts* - distinct legal standards requiring preservation (not interchangeable)
+  * *representations and warranties* - distinct concepts (representations = past/factual statements; warranties = promises for future performance)
+* **Criminal Law Terms of Art**: Preserve the following:
+  * *rule of lenity* - requires ambiguous criminal statutes be construed in defendant's favor
+  * *strict liability* - liability without fault in criminal/tort contexts
+  * *proximate cause* - legal cause distinguishing liability from mere factual causation
 
 ### 8. Permitted Lay-Facing Modernization
 * **Preponderance of the Evidence**: In lay-facing documents (like jury instructions or consumer disclosures), replace *"preponderance of the evidence"* with the California CACI-approved plain language equivalent: **"more likely to be true than not true."** Keep the original phrase in formal briefs or motions.
 
+### 9. Statutory Interpretation Canons
+* **Ejusdem Generis**: When a general word follows specific words in a list, interpret the general word in context of the specific ones (e.g., "cars, trucks, and other vehicles" - "other vehicles" limited to transportation).
+* **Noscitur a Sociis**: Words derive meaning from their linguistic neighbors (e.g., "bank, river, and stream" - all refer to financial institutions vs. bodies of water based on context).
+* **Expressio Unius Est Exclusio Alterius**: Mentioning specific items may imply exclusion of unmentioned ones - preserve intentional gaps.
+
 ---
-
-## IV. Syntactic Pitfalls & Ambiguity Resolution
-
-### 9. Eradication of "Shall"
+ 
+ ## IV. Syntactic Pitfalls & Ambiguity Resolution
+ 
+ ### 10. Eradication of "Shall"
 * **Rule**: Complete eradication of the word "shall." Replace it based on the exact category of meaning:
   * **Obligation/Duty**: Use **must** (e.g., *"The Tenant must pay the rent"*).
   * **Future Action/Prediction**: Use **will** (e.g., *"The lease will terminate on Dec 31"*).
@@ -104,10 +118,10 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
   * **Exclusive**: Use *"either A or B, but not both"*.
 
 ### 11. Eradicating Provisos ("Provided That")
-* **Rule**: Completely ban the phrase *"provided that"* or *"provided however that"*.
-* **Transformation**: Terminate the preceding sentence. Start a new sentence:
-  * Use **"If"** for conditions.
-  * Use **"But if"** or **"Except that"** for exceptions.
+* **Rule**: Ban "provided that" when used as a proviso (mid-sentence exception or afterthought). Allow at sentence beginning only as a condition introducer.
+* **Transformation**: 
+  * For mid-sentence provisos: End previous sentence. Start new sentence with "But if" (exception) or "If" (condition).
+  * For sentence-start conditions: Replace with "If [condition], [result]."
 
 ### 12. Ambiguous Modifiers & The Last Antecedent
 * **Rule**: When a trailing modifier (e.g., *"incurred outside the state"*) is attached to a series of elements, it creates ambiguity.
@@ -140,7 +154,7 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
   * Do not use a comma between month and year (e.g., *"June 2026"*).
   * Do not use a comma between a last name and a suffix (e.g., *"John Smith Jr."*, *"Robert Jones III"*).
 * **United States**: Use *"U.S."* (with periods, no space) when used as an adjective (e.g., *"U.S. Supreme Court"*). Spell out *"United States"* when used as a noun.
-* **Attorney Fees**: Use *"attorney fees"* (no apostrophes). Avoid *"attorney's fees"* or *"attorneys' fees"*.
+* **Attorney Fees**: Prefer *"attorney fees"* (no apostrophes) to avoid ambiguity. "Attorney's fees" or "attorneys' fees" acceptable when required by statute or established precedent.
 
 ---
 
@@ -149,13 +163,16 @@ An AI drafting agent must never dilute true "terms of art"—expressions with an
 ### 17. Quantitative Readability Target
 * **Rule**: Strive to achieve a minimum Flesch Reading Ease score of **40** or higher on all public or consumer-facing texts.
 
-### 18. Eradication of "Elegant Variation"
+### 18. Numerical Consistency
+* **Rule**: Spell out numbers 1-9; use digits for 10+. In any single list or series, if one number is 10+ and rendered as digits, all numbers in that list must be digits.
+ 
+### 19. Eradication of "Elegant Variation"
 * **Rule**: Maintain absolute terminological consistency. If a contract refers to a *"vehicle"* in one section, do not refer to it as an *"automobile"* or *"car"* in another. Locking vocabulary prevents accidental changes in legal meaning.
-
-### 19. Dialogue Tag Relocation
+ 
+### 20. Dialogue Tag Relocation
 * **Rule**: In litigation briefs, avoid beginning multiple sentences with repetitive tags (e.g., *"The Plaintiff argues that..."*). Move the tag to the middle or end of the sentence (e.g., *"The statute is unambiguous, the Plaintiff asserts"*).
-
-### 20. Civility and Professionalism (California Guidelines)
+ 
+### 21. Civility and Professionalism (California Guidelines)
 * **Rule**: Strip away aggressive, combative ad hominem attacks. Keep tone objective, respectful, and focused strictly on legal and factual arguments.
 
 ---

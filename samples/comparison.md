@@ -64,7 +64,7 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 ### After (Plain English Numbers)
 > The Executive is entitled to 30 days of annual vacation leave and must request it at least 14 business days before the leave begins.
 >
-> *(Note: "Thirty" and "fourteen" are represented by digits as they are greater than or equal to 10. The parenthetical repetition is removed entirely.)*
+> *(Note: Numbers 10+ appear as digits; the doublet "(30)" is removed. Both numbers in this list are 10+, so both use digits consistently.)*
 
 ---
 
@@ -137,25 +137,27 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 
 ---
 
-## 12. Syntactic Pitfalls & Ambiguities
+## 12. Terms of Art Distinctions (When to Preserve)
 
-### A. Eradication of "Shall"
-* **Before**: The Buyer *shall* pay the purchase price upon closing. The Broker *shall* receive 3% commission, and the agreement *shall* be governed by New York law.
-* **After**: The Buyer *must* pay the purchase price upon closing. The Broker *will* receive a 3% commission, and the agreement *is* governed by New York law.
-* *Mechanics*: "Shall" is replaced with **must** for buyer's obligation, **will** for broker's future receipt, and **is** for the legal status of the governing law.
+### A. "Best Efforts" vs. "Reasonable Efforts"
+* **Before**: The Developer shall use its best efforts, reasonable efforts, and good faith to complete the project on time.
+* **After**: The Developer must use its **best efforts** to complete the project on time.
+* *Mechanics*: "Best efforts" is the highest contractual standard (requires prioritizing this project above others). "Reasonable efforts" and "good faith" are redundant here and create uncertainty about which standard applies.
 
-### B. Resolving "And/Or"
-* **Before**: The Licensee is liable for any claims resulting from copyright infringement *and/or* trademark infringement.
-* **After**: The Licensee is liable for any claims resulting from copyright infringement, trademark infringement, *or both*.
+### B. "Time is of the Essence"
+* **Before**: Performance by the due date is preferred but not strictly required.
+* **After**: **Time is of the essence** for performance under this agreement.
+* *Mechanics*: This phrase transforms time from a mere factor into a condition—failure to meet the deadline constitutes a material breach.
 
-### C. Eradicating Provisos ("Provided That")
-* **Before**: The Seller will ship the goods within ten days, *provided that* if there is a severe weather event, the shipment may be delayed.
-* **After**: The Seller will ship the goods within ten days. *But if* there is a severe weather event, the shipment may be delayed.
+### C. "Act of God" in Force Majeure
+* **Before**: The Contractor shall not be liable for delays caused by natural disasters, storms, floods, or acts of God.
+* **After**: The Contractor shall not be liable for delays caused by acts of God, including earthquakes, floods, or hurricanes.
+* *Mechanics*: "Act of God" is a recognized legal term with established meaning; expanding the list clarifies scope without diluting the term.
 
-### D. Curing Trailing Modifiers
-* **Before**: The Employer will cover fees for educational seminars, certification courses, and industry conventions *held in the state of Texas*.
-* **After**: The Employer will cover the following expenses *if they are held in Texas*: (1) educational seminars, (2) certification courses, and (3) industry conventions.
-* *Mechanics*: Prevents ambiguity about whether "held in the state of Texas" applies to all three items or only to industry conventions.
+### D. "Representations" vs. "Warranties"
+* **Before**: The Seller represents and warrants that the product conforms to specifications and will perform satisfactorily.
+* **After**: The Seller **represents** that the product conforms to the specifications attached. The Seller **warrants** that the product will perform satisfactorily for 90 days.
+* *Mechanics*: Representations are past/factual statements (truth at time of speaking). Warrantizations are promises for the future.
 
 ---
 
