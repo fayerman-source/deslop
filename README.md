@@ -5,12 +5,12 @@
 
 ![Deslop Hero Banner](assets/deslop_hero_banner.png)
 
-A plug-and-play skill for AI coding assistants and agentic frameworks (including **Google Antigravity**, **Gemini CLI**, **Claude Code**, and others). This skill instructs the agent to perform clear **legal writing** and general prose editing by auditing, drafting, and translating text to follow plain English principles.
+A portable skill for AI coding assistants and agentic frameworks (including **Google Antigravity**, **Gemini CLI**, **Claude Code**, and others). It teaches the agent to audit, draft, and rewrite text into plain English, for **legal writing** and general prose alike.
 
-It incorporates the key tenets of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to transform dense, archaic legalese and repetitive, verbose **AI slop** into clear, precise, and readable prose.
+It applies the core rules of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to turn dense legalese and verbose **AI slop** into clear, readable prose.
 
 > [!NOTE]
-> **Universal Applicability & Slop Mitigation**: While this skill is equipped with safety guards to preserve essential legal terms of art, its core rules on sentence architecture, active voice, and omitting needless words apply to **all forms of professional, technical, and general English writing** (such as business memos, technical documentation, and correspondence). By enforcing high-density, direct language and banning boilerplate fillers, this style guide serves as an effective tool to mitigate verbose and repetitive AI-generated text ("AI slop").
+> **Universal Applicability & Slop Mitigation**: The skill guards essential legal terms of art, but its core rules (sentence architecture, active voice, omitting needless words) apply to **all professional, technical, and general writing** such as business memos, documentation, and correspondence. By enforcing direct, high-density language and banning boilerplate, it also cuts verbose, repetitive AI-generated text ("AI slop").
 
 ---
 
@@ -23,7 +23,7 @@ It incorporates the key tenets of plain-language legal drafting (inspired by Bry
 * **Rule Tabulation**: Formats dense multi-part legal rules, conditions, and lists into structured, parallel, and indented sub-items.
 * **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days* or *three days*).
 * **Gender-Neutral Drafting**: Replaces binary/clunky pronouns (*he or she*, *his or her*) with clean, inclusive, and modern gender-neutral phrasing.
-* **Oxford Comma Enforcement**: Guarantees the serial comma is used to resolve and prevent list ambiguity.
+* **Oxford Comma Enforcement**: Uses the serial comma to prevent list ambiguity.
 * **Omitting Needless Words**: Strips redundant modifiers (e.g., *completely finish* -> *finish*), empty "throat-clearing" introductory phrases, and roundabout sentences to achieve maximum density.
 * **ABA Publication Style Compliance**: Standardizes restrictive/nonrestrictive clauses (*that* vs. *which*), quotation punctuation, date/name formatting, U.S. abbreviations, and "attorney fees" terminology.
 * **Structural Formatting**: Redesigns long, dense walls of legal text using informative headings and lists.
@@ -34,8 +34,15 @@ It incorporates the key tenets of plain-language legal drafting (inspired by Bry
 
 This skill uses the portable `SKILL.md` (Agent Skills) format, natively supported by **Antigravity CLI** (Google's successor to Gemini CLI), **Claude Code**, and **Codex CLI**. See the framework-specific instructions below.
 
+### Quick install (any agent, via skills.sh)
+The fastest path. Works across 20+ agents through the [skills.sh](https://skills.sh) registry:
+
+```bash
+npx skills add fayerman-source/deslop
+```
+
 ### Antigravity CLI
-Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories — clone the repository into one:
+Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories; clone the repository into one:
 
 * **Workspace-specific:**
   ```bash
@@ -46,14 +53,14 @@ Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on J
   git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
   ```
 
-The skill is discovered automatically; restart the CLI or reload skills if it doesn't appear. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax — the manual clone above works either way.
+The skill is discovered automatically; restart the CLI or reload skills if it doesn't appear. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax. The manual clone above works either way.
 
-> **Legacy — Gemini CLI (until June 18, 2026):** Gemini CLI installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope). After that date Gemini CLI remains only for Gemini Code Assist Standard/Enterprise license holders.
+> **Legacy: Gemini CLI (until June 18, 2026):** Gemini CLI installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope). After that date Gemini CLI remains only for Gemini Code Assist Standard/Enterprise license holders.
 
 ---
 
 ### Claude Code
-Claude Code supports this skill natively through its [Agent Skills](https://code.claude.com/docs/en/skills) system — `SKILL.md` already carries the required `name`/`description` frontmatter. Clone the repository into a skills directory:
+Claude Code supports this skill natively through its [Agent Skills](https://code.claude.com/docs/en/skills) system. `SKILL.md` already carries the required `name`/`description` frontmatter. Clone the repository into a skills directory:
 
 * **Personal (all projects):**
   ```bash
@@ -68,12 +75,12 @@ Claude Code auto-discovers the skill and applies it when relevant; you can also 
 
 > **Inside a session:** Claude Code has no slash command to install a standalone skill from a URL. Either run the clone above, or ask Claude to do it for you ("clone deslop into `~/.claude/skills`"); restart Claude Code afterward so it picks up the new skill.
 
-**Alternative (without skills):** Append the contents of `SKILL.md` to a `CLAUDE.md` file — your project-root `CLAUDE.md` for a single project, or `~/.claude/CLAUDE.md` for all projects. Claude Code loads both automatically as instructions.
+**Alternative (without skills):** Append the contents of `SKILL.md` to a `CLAUDE.md` file: your project-root `CLAUDE.md` for a single project, or `~/.claude/CLAUDE.md` for all projects. Claude Code loads both automatically as instructions.
 
 ---
 
 ### Codex CLI
-Codex CLI also supports native [Agent Skills](https://developers.openai.com/codex/skills) — it scans `.agents/skills/` directories for a `SKILL.md` with `name`/`description` frontmatter (keep the frontmatter; Codex uses it for discovery). Clone into a skills directory:
+Codex CLI also supports native [Agent Skills](https://developers.openai.com/codex/skills). It scans `.agents/skills/` directories for a `SKILL.md` with `name`/`description` frontmatter (keep the frontmatter; Codex uses it for discovery). Clone into a skills directory:
 
 * **Project-scoped:**
   ```bash
@@ -86,14 +93,14 @@ Codex CLI also supports native [Agent Skills](https://developers.openai.com/code
 
 Invoke it with `$deslop`, or let Codex activate it when the task matches the skill description. (Restart Codex if a freshly cloned skill doesn't appear.)
 
-> **Inside a session:** use the built-in `$skill-installer` skill — run `$skill-installer` and ask it to install deslop from the repository URL (it can pull skills from external repos); browse what's installed with `/skills`.
+> **Inside a session:** use the built-in `$skill-installer` skill: run `$skill-installer` and ask it to install deslop from the repository URL (it can pull skills from external repos); browse what's installed with `/skills`.
 
-**Alternative (always-on):** copy the body of `SKILL.md` (without the YAML frontmatter) into `AGENTS.md` at your repo root, or `~/.codex/AGENTS.md` for global guidance — Codex reads these as standing instructions.
+**Alternative (always-on):** copy the body of `SKILL.md` (without the YAML frontmatter) into `AGENTS.md` at your repo root, or `~/.codex/AGENTS.md` for global guidance. Codex reads these as standing instructions.
 
 ---
 
 ### Other Tools (Aider, Cursor, Copilot, …)
-Tools without a skills system can still use these guidelines — load `SKILL.md` as the tool's instructions or rules file:
+Tools without a skills system can still use these guidelines; load `SKILL.md` as the tool's instructions or rules file:
 
 * **Aider:** `aider --read SKILL.md` (or add `read: SKILL.md` to `.aider.conf.yml`).
 * **Cursor:** copy `SKILL.md` into `.cursor/rules/`.
@@ -128,7 +135,7 @@ Once installed, your AI agent will automatically detect and apply the skill when
 
 ## 🤝 Contributing
 
-Contributions to improve style guidance, expand rules, or support additional agent frameworks are welcome! Feel free to open an issue or submit a pull request.
+Contributions are welcome: improve style guidance, expand rules, or add support for more agent frameworks. Open an issue or submit a pull request.
 
 ## ⚖️ License
 
