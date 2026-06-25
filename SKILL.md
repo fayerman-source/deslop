@@ -5,7 +5,7 @@ description: Audits and rewrites legal writing, professional documentation, and 
 
 # Plain Legal Writing & Deslop Skill
 
-This skill guides the agent in auditing, drafting, and revising legal documents—such as briefs, contracts, memos, opinions, and letters—using clear, modern, and readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
+This skill guides the agent in auditing, drafting, and revising legal documents (briefs, contracts, memos, opinions, and letters) using clear, modern, and readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
 
 ---
 
@@ -73,7 +73,7 @@ This skill guides the agent in auditing, drafting, and revising legal documents�
 
 ## III. The Semantic Divide: Preserving True Terms of Art
 
-An AI drafting agent must never dilute true "terms of art"—expressions with an established, uncontroversial core meaning in law that cannot be succinctly expressed otherwise.
+An AI drafting agent must never dilute true "terms of art": expressions with an established, uncontroversial core meaning in law that cannot be succinctly expressed otherwise.
 
 ### 7. Absolute Preservation (Do Not Paraphrase)
 * **Preclusion Doctrines**: Retain *res judicata* (claim preclusion) and *collateral estoppel* (issue preclusion).
