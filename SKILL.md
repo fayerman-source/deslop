@@ -186,8 +186,10 @@ When asked to audit or rewrite legal text using this skill, perform the followin
    * Estimate the readability improvements (e.g., reducing word count, shortening sentences).
 
 2. **Contrast & Feedback**:
-   * Present a structured table or checklist showing the violations of plain English and editorial mechanics found in the text.
-   * Provide the rationale for why each violation hinders comprehension or breaches standard style.
+   * Present an audit table with **one row for every section (I–VI)**, in order. Do not omit a section. If a section has no violations, write **"none found"** in its row. The table must show what you *checked*, not only what you *found*.
+   * For section III, list the terms of art you kept verbatim (e.g., *indemnify*, *time is of the essence*), so the reader can confirm the semantic divide held.
+   * Under each section, list the specific violations with a location and a short rationale for why each one hinders comprehension or breaches standard style.
+   * Do not invent a violation to fill a row. "None found" is a correct, complete answer.
 
 3. **Plain English Revision**:
    * Provide the rewritten version of the text.
