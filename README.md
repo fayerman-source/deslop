@@ -113,13 +113,15 @@ Tools without a skills system can still use these guidelines; load `SKILL.md` as
 Once installed, your AI agent will automatically detect and apply the skill when you ask it to edit legal documents, or you can invoke it explicitly:
 
 * **Explicit Prompting**:
-  > *"Review this contract clause using the `plain-legal-writing` skill."*
-  > *"Draft a brief response to this motion following the `plain-legal-writing` guidelines."*
+  > *"Review this contract clause using the `deslop` skill."*
+  > *"Draft a brief response to this motion following the `deslop` guidelines."*
 * **Slash Commands**:
   If your agent supports slash commands in its TUI, you can trigger it directly:
   ```text
   /deslop Audit this NDA agreement: [paste agreement text]
   ```
+
+* **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found," and the terms-of-art row lists what the agent kept verbatim. The rewrite follows the table.
 
 ---
 
