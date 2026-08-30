@@ -1,0 +1,33 @@
+# Thin caller for the shared pr-agent reviewer (Kimi K3 on Nvidia NIM). The reviewer itself
+# (model, context, guards) lives once in
+# fayerman-source/leadgen-workspace/.github/workflows/pr-agent.yml; change it there.
+# This file subscribes to events, grants token scopes, passes the secret, and sets the
+# review scope for a plain code repository. Trigger by opening/updating a PR or by
+# commenting `/review` on one (owner/member/collaborator comments only).
+name: "Nvidia PR-Agent Review"
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  pull-requests: write
+  issues: write
+  contents: read
+
+jobs:
+  pr_agent_job:
+    uses: fayerman-source/leadgen-workspace/.github/workflows/pr-agent.yml@main
+    secrets:
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+    with:
+      extra_instructions: >-
+        Report only real defects: a regression this PR introduces versus the base branch (state how
+        to reproduce), a check that cannot fail, an unhandled input the code can actually receive,
+        a security or supply-chain issue in workflows or dependencies, a broken build or test the
+        diff implies. If a finding depends on a file or function you cannot see, say so instead of
+        guessing. No style, naming, tone or formatting remarks. Do not re-report a finding already
+        answered on this PR. Severity: P1 only for a defect reproducible on this branch; P2 for a
+        likely defect you could not reproduce; nothing lower.
