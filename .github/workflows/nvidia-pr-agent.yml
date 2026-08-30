@@ -1,9 +1,10 @@
-# Thin caller for the shared pr-agent reviewer (Kimi K3 on Nvidia NIM). The reviewer itself
-# (model, context, guards) lives once in
-# fayerman-source/leadgen-workspace/.github/workflows/pr-agent.yml; change it there.
-# This file subscribes to events, grants token scopes, passes the secret, and sets the
-# review scope for a plain code repository. Trigger by opening/updating a PR or by
-# commenting `/review` on one (owner/member/collaborator comments only).
+# Standalone copy of the shared pr-agent reviewer (Kimi K3 on Nvidia NIM) for a PUBLIC repository.
+# The shared version lives in the private repo fayerman-source/leadgen-workspace
+# (.github/workflows/pr-agent.yml) and is called by thin callers in the private repos; a
+# public repository cannot resolve a private reusable workflow, so this file inlines the job
+# with a code-only review scope. When the shared reviewer changes (model, context, caps),
+# port the `jobs:` block here by hand. Trigger: PR open/update, or `/review` as a comment
+# (owner/member/collaborator only).
 name: "Nvidia PR-Agent Review"
 
 on:
@@ -18,16 +19,73 @@ permissions:
   contents: read
 
 jobs:
-  pr_agent_job:
-    uses: fayerman-source/leadgen-workspace/.github/workflows/pr-agent.yml@main
-    secrets:
-      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-    with:
-      extra_instructions: >-
-        Report only real defects: a regression this PR introduces versus the base branch (state how
-        to reproduce), a check that cannot fail, an unhandled input the code can actually receive,
-        a security or supply-chain issue in workflows or dependencies, a broken build or test the
-        diff implies. If a finding depends on a file or function you cannot see, say so instead of
-        guessing. No style, naming, tone or formatting remarks. Do not re-report a finding already
-        answered on this PR. Severity: P1 only for a defect reproducible on this branch; P2 for a
-        likely defect you could not reproduce; nothing lower.
+  review:
+    # Bots never trigger (no comment loops). Comment triggers only from owners, members and
+    # collaborators; pull_request triggers only from branches of the calling repository, since a
+    # fork PR gets no secrets and would only produce a failing run. The container runs with the
+    # NVIDIA key and a write-capable token, so both gates matter if a repository is ever public.
+    if: ${{ github.event.sender.type != 'Bot' && (github.event_name != 'issue_comment' || contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) }}
+    runs-on: ubuntu-latest
+    name: Run PR Agent on Nvidia NIM
+    steps:
+      - name: PR Agent action step
+        # 0.41.0-github_action, pinned by manifest digest so a retagged image cannot change the
+        # code that runs with a write-capable GITHUB_TOKEN and the NVIDIA key.
+        uses: docker://pragent/pr-agent@sha256:3121a7b8e3ab497b4df09dea6a444da8f01a474496c8c2f722828512c52fd266
+        env:
+          OPENAI_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          OPENAI_BASE_URL: "https://integrate.api.nvidia.com/v1"
+          OPENAI.API_BASE: "https://integrate.api.nvidia.com/v1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Models. "openai/" prefix routes through litellm's OpenAI-compatible path at the base URL
+          # (litellm has no "nvidia/" provider and sends "meta/" to Meta's own API). Bake-off on two
+          # known 9t defects, 2026-08-28: Kimi K3 found both at a 16k output cap; Nemotron 3 Super
+          # found neither but answers in 12-20s, so it is the fallback. Llama-3.x NIM models reached
+          # end of life on 2026-08-26.
+          config.model: "openai/moonshotai/kimi-k3"
+          config.fallback_models: '["openai/nvidia/nemotron-3-super-120b-a12b"]'
+          # Prompt budget; the models' windows are far larger. Raised with the context lines below.
+          config.custom_model_max_tokens: "100000"
+          # Also raise the general cap: pr-agent prunes the diff at config.max_model_tokens (default 32000)
+          # regardless of the model-specific value; a 76-file content PR hit it and lost the ledger and
+          # facts.json from the prompt (run 33234314794, 2026-08-29). Note pr-agent hard-caps
+          # patch_extra_lines_before/after at 10, so the 60/30 below is advisory only.
+          config.max_model_tokens: "100000"
+          # Output cap sent as max_tokens; reasoning shares it with the answer. Kimi K3 found one of
+          # two defects at ~2.5k and both at 16k.
+          config.max_output_tokens: "16384"
+          # Context around each hunk (defaults: 5 before, 1 after, dynamic reach 10). The reviewer's
+          # misses on real PRs were context starvation: give it the surrounding function.
+          config.patch_extra_lines_before: "60"
+          config.patch_extra_lines_after: "30"
+          config.allow_dynamic_context: "true"
+          config.max_extra_lines_before_dynamic_context: "60"
+          # Review only. describe rewrites PR bodies (and titles that carry [no-restamp]); improve
+          # posts inline suggestions that each need a reply. synchronize must be listed or reviews
+          # run on PR open only.
+          # Verbose for the trial week: logs the prompt and the model's raw response so an empty review can
+          # be told apart from a parse failure or a clipped diff. Drop to 0 if it stays.
+          config.verbosity_level: "2"
+          github_action_config.auto_describe: "false"
+          github_action_config.auto_review: "true"
+          github_action_config.auto_improve: "false"
+          github_action_config.pr_actions: '["opened", "reopened", "ready_for_review", "review_requested", "synchronize"]'
+          # One persistent comment updated per push; no labels; no score; no ticket analysis (it
+          # treats any "#N" in a PR body as a ticket and grades the PR against invented requirements).
+          # One comment per review for the trial week (to 2026-09-05), so the scorecard can be audited
+          # review by review; set back to "true" (one comment, edited in place) if it stays.
+          pr_reviewer.persistent_comment: "false"
+          pr_reviewer.num_max_findings: "5"
+          pr_reviewer.require_score_review: "false"
+          pr_reviewer.require_tests_review: "false"
+          pr_reviewer.require_ticket_analysis_review: "false"
+          pr_reviewer.enable_review_labels_effort: "false"
+          pr_reviewer.enable_review_labels_security: "false"
+          pr_reviewer.extra_instructions: >-
+            Report only real defects: a regression this PR introduces versus the base branch (state how
+            to reproduce), a check that cannot fail, an unhandled input the code can actually receive,
+            a security or supply-chain issue in workflows or dependencies, a broken build or test the
+            diff implies. If a finding depends on a file or function you cannot see, say so instead of
+            guessing. No style, naming, tone or formatting remarks. Do not re-report a finding already
+            answered on this PR. Severity: P1 only for a defect reproducible on this branch; P2 for a
+            likely defect you could not reproduce; nothing lower.
