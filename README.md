@@ -1,3 +1,5 @@
+
+
 # Deslop: Plain Legal Writing Skill for AI Agents
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -121,7 +123,7 @@ Once installed, your AI agent will automatically detect and apply the skill when
   /deslop Audit this NDA agreement: [paste agreement text]
   ```
 
-* **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found," and the terms-of-art row lists what the agent kept verbatim. The rewrite follows the table.
+* **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found," and the Section III row lists what the agent kept verbatim. The rewrite follows the table.
 
 ---
 
