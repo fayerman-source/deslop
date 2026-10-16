@@ -23,7 +23,7 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
 * **Self-Containment**: Ensure the reader can understand the issue without reading the rest of the document.
 
 ### 3. Sentence & Paragraph Architecture
-* **Sentence Length**: Maintain an average sentence length of 15 to 20 words. Avoid sentences exceeding 30 words.
+* **Sentence Length**: Maintain an average sentence length of 15 to 20 words. Avoid sentences exceeding 30 words. Measure your own prose only: exclude verbatim quotations, citations, and quoted statutory text, which you must not shorten. If a sentence runs long because it carries a quotation, split the surrounding prose instead.
 * **Keep S-V-O Close**: Keep the subject, verb, and object close together, ideally near the beginning of the sentence. Do not insert long qualifying phrases between the subject and the verb.
 * **Topic Sentences & Transitions**: Start every paragraph with a topic sentence and use explicit transitions (bridges) between paragraphs.
 * **Tabulate Complex Rules (Tabulation)**: When a rule contains multiple conditions, dependencies, or consequences:
@@ -31,6 +31,8 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
   2. Use a vertical, numbered or bulleted list.
   3. Begin with an introductory clause ending with a colon.
   4. Ensure all sub-items are grammatically parallel.
+* **Keep Short Series Inline**: Tabulate when the items are long or carry their own conditions. Keep a short, simple series (a few words per item) inline in one sentence. A vertical list adds length, so do not convert brief lists.
+* **Never Edit Inside Quotation Marks**: Quoted contract language, statutes, testimony, and case excerpts stay verbatim, including *shall*, doublets, and double-entry numbers. Every rule in this skill applies to your own prose around the quotation, not to the quotation.
 
 ---
 
@@ -54,6 +56,13 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
   * *employs, engages, and hires* $\rightarrow$ **employs**
   * *fit and proper* $\rightarrow$ **fit**
   * *by and between* $\rightarrow$ **between**
+
+* **Avoid Colloquial Idioms (Register)**: Plain English is not casual English. In legal and professional documents, replace slang, idioms, and cute lead-ins with plain, precise words:
+  * *where the label could bite* $\rightarrow$ **revocation risk**
+  * *our levers* $\rightarrow$ **our best arguments**
+  * *stronger than it first looks* $\rightarrow$ **has real support**
+  * *the real issue* $\rightarrow$ **the main issue**
+  * *set expectations* $\rightarrow$ state the expected outcome
 
 ### 5. Zombie Nouns (Nominalizations)
 * **Rule**: Identify abstract nouns ending in suffixes like *-tion, -ment, -ance, -ity* that are paired with weak helper verbs (e.g., *make, take, reach, give, have, provide, conduct*). Reverse them into their root active verbs:
@@ -142,6 +151,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 ## V. Editorial Standards & Typography
 
 ### 16. Typographic Design & Layout Rules (SEC Standards)
+* **Court Rules and House Style Control**: If a court rule, agency rule, or the firm's house style prescribes a font, type size, or alignment, follow it. Apply the defaults below only when no such rule applies.
 * **Font Selection**: Enforce Serif fonts (such as **Garamond**, **Palatino**, or **Georgia**) for extensive body text to improve tracking. Prohibit Times New Roman as a default. Use Sans Serif (such as **Arial** or **Calibri**) for headings.
 * **Margin Alignment**: Enforce Left-Aligned (Ragged Right). Prohibit fully justified text.
 * **Emphasis**: Prohibit all-caps and underlining for emphasis. Use bold styling sparingly (exception: conspicuous UCC warranty disclaimers).
@@ -165,6 +175,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 
 ### 19. Numerical Consistency
 * **Rule**: Spell out numbers 1-9; use digits for 10+. In any single list or series, if one number is 10+ and rendered as digits, all numbers in that list must be digits.
+* **Legal Carve-Out**: Use digits at any size for dates, money, percentages, section and rule numbers, measurements and ranges (e.g., *floors 4-10*), and operative time periods (e.g., *cure within 5 business days*). Precision outweighs style for figures a reader may act on.
 
 ### 20. Eradication of "Elegant Variation"
 * **Rule**: Maintain absolute terminological consistency. If a contract refers to a *"vehicle"* in one section, do not refer to it as an *"automobile"* or *"car"* in another. Locking vocabulary prevents accidental changes in legal meaning.

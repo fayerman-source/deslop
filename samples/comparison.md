@@ -195,3 +195,66 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 * **After (Brief/Motion)**: The Plaintiff has the burden to establish all elements by a *preponderance of the evidence*. *(True term of art preserved for the court)*.
 * **Before (Jury Instructions)**: To find for the plaintiff, you must find that the elements are established by a *preponderance of the evidence*.
 * **After (Jury Instructions)**: To find for the plaintiff, you must find that the elements are *more likely to be true than not true*. *(Modernized for lay comprehension)*.
+
+---
+
+## 15. Register: Plain, Not Casual
+
+### Before (Colloquial Lead-Ins)
+> **Where the label could bite.** If the owner ever revokes the license, our levers get weaker. The owner's case is stronger than it first looks, so we should set expectations with the client.
+
+### After (Professional Plain English)
+> **Revocation risk.** If the owner revokes the license, the client has fewer arguments. The owner's position has real support, so we should tell the client that a court is unlikely to grant an injunction.
+
+*(Note: The revision stays short and direct. It drops the idioms, not the plain style.)*
+
+---
+
+## 16. Quotations Stay Verbatim
+
+### Before (Agent Rewrote the Quotation)
+> Section 9(c) says the fee must abate fully for each day on which more than 50% of the display is unavailable, and because the plan removes 60% of the display, which the owner concedes in its notice, the fee abates in full for the whole period.
+
+### After (Quotation Preserved; Surrounding Prose Split)
+> Section 9(c) says the fee "shall abate in full for each day on which more than fifty percent (50%) of the Display Area is unavailable." The plan removes 60% of the display, as the owner's notice concedes. So the fee abates in full for the whole period.
+
+*(Note: The quotation keeps "shall" and the double-entry number because it is the contract's own language. Only the surrounding prose is shortened, and the quoted words do not count toward the 30-word limit.)*
+
+---
+
+## 17. Short Series Stay Inline
+
+### Before (Over-Tabulated)
+> The client may recover:
+> 1. the abated fee;
+> 2. removal costs; and
+> 3. reinstallation costs.
+
+### After (Inline)
+> The client may recover the abated fee, removal costs, and reinstallation costs.
+
+*(Note: Tabulate long or conditional items, as in section 6. A three-item list of short nouns reads faster inline and saves space.)*
+
+---
+
+## 18. Numbers: Legal Carve-Out
+
+### Before (Spelled-Out Operative Figures)
+> The tenant must cure within five business days and may use floors four through ten during the work.
+
+### After (Digits for Operative Figures)
+> The tenant must cure within 5 business days and may use floors 4-10 during the work.
+
+*(Note: Deadlines, ranges, money, percentages, and section numbers use digits at any size because a reader may act on them.)*
+
+---
+
+## 19. Court Rules and House Style Control Typography
+
+### Before (Defaults Applied Over a Court Rule)
+> *An agent reformats a brief for a court whose rules require 14-point Century Schoolbook into 12-point Garamond, ragged right.*
+
+### After (Court Rule Followed)
+> *The agent keeps 14-point Century Schoolbook as the court rule requires and applies only the text rules (word choice, sentence length, structure).*
+
+*(Note: The typography defaults in rule 16 apply only when no court rule, agency rule, or house style prescribes the format.)*
