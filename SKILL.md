@@ -192,7 +192,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 When asked to audit or rewrite legal text using this skill, perform the following steps:
 
 1. **Analysis & Diagnostics**:
-   * Identify specific issues in the original text (e.g., sentence lengths, passive voice, nominalizations, legalese words, colloquial idioms, double-entry numbers, unnecessary filler words, incorrect punctuation of quotation marks or suffixes, incorrect "that/which" usage). Flag sentence length, legalese, and double-entry numbers in the writer's own prose only, not inside quotations.
+   * Identify specific issues in the original text (e.g., sentence lengths, passive voice, nominalizations, legalese words, colloquial idioms, double-entry numbers, unnecessary filler words, incorrect punctuation of quotation marks or suffixes, incorrect "that/which" usage). Apply every check to the writer's own prose only, not inside quotations. The one exception is the quotation-punctuation mechanics in rule 17.
    * Estimate the readability improvements (e.g., reducing word count, shortening sentences).
 
 2. **Contrast & Feedback**:
