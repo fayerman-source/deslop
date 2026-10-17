@@ -9,7 +9,7 @@ A portable skill for AI coding assistants and agent frameworks (including **Goog
 
 It applies the core rules of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to turn dense legalese and verbose **AI slop** into clear, readable prose.
 
-Built for lawyers, paralegals, in-house counsel, and law students who draft or review contracts, briefs, memos, opinions, client letters, demand letters, and policies. It also suits anyone cleaning up AI-generated text before it goes to a client or a court.
+Built for lawyers, paralegals, in-house counsel, and law students. It works on contracts, briefs, memos, opinions, client letters, demand letters, and policies. It also suits anyone cleaning up AI-generated text before it goes to a client or a court.
 
 > [!NOTE]
 > **Not only for lawyers**: The skill protects legal terms of art and quoted language. Its core rules (sentence architecture, active voice, needless words) apply to **any professional writing**: business memos, documentation, and correspondence. The same rules cut the padding and repetition in AI-generated text ("AI slop").
@@ -25,7 +25,7 @@ Built for lawyers, paralegals, in-house counsel, and law students who draft or r
 * **Nominalization De-bloater**: Converts buried verbs (like *make a decision* or *conduct an analysis of*) back into strong, active verbs (*decide*, *analyze*).
 * **Deep Issue Framing**: Restructures complex legal issues into the clean "premise-premise-question" format (under 75 words) rather than convoluted "Whether" statements.
 * **Rule Tabulation**: Formats dense multi-part legal rules, conditions, and lists into structured, parallel, and indented sub-items, and keeps short, simple series inline.
-* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days*) and uses digits for dates, money, percentages, section numbers, and deadlines a reader may act on.
+* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days*) and uses digits for every figure a reader may act on: dates, money, percentages, section numbers, and deadlines.
 * **Gender-Neutral Drafting**: Replaces binary/clunky pronouns (*he or she*, *his or her*) with gender-neutral phrasing.
 * **Oxford Comma Enforcement**: Uses the serial comma to prevent list ambiguity.
 * **Omitting Needless Words**: Strips redundant modifiers (e.g., *completely finish* -> *finish*), empty "throat-clearing" introductory phrases, and roundabout sentences.
@@ -47,7 +47,7 @@ npx skills add fayerman-source/deslop
 ```
 
 ### Antigravity CLI
-Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories; clone the repository into one:
+Antigravity CLI is Google's successor to Gemini CLI (which Google [retires on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories; clone the repository into one:
 
 * **Workspace-specific:**
   ```bash
@@ -58,7 +58,7 @@ Antigravity CLI is Google's successor to Gemini CLI (which is being [sunset on J
   git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
   ```
 
-The skill is discovered automatically; restart the CLI or reload skills if it doesn't appear. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax. The manual clone above works either way.
+The CLI discovers the skill automatically. If it doesn't appear, restart the CLI or reload skills. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax. The manual clone above works either way.
 
 > **Legacy: Gemini CLI (until June 18, 2026):** Gemini CLI installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope). After that date Gemini CLI remains only for Gemini Code Assist Standard/Enterprise license holders.
 
@@ -78,7 +78,7 @@ Claude Code supports this skill natively through its [Agent Skills](https://code
 
 Claude Code auto-discovers the skill and applies it when relevant; you can also invoke it explicitly with `/deslop`.
 
-> **Inside a session:** Claude Code has no slash command to install a standalone skill from a URL. Either run the clone above, or ask Claude to do it for you ("clone deslop into `~/.claude/skills`"); restart Claude Code afterward so it picks up the new skill.
+> **Inside a session:** Claude Code has no slash command to install a standalone skill from a URL. Either run the clone above, or ask Claude to do it for you ("clone deslop into `~/.claude/skills`"). Restart Claude Code afterward so it picks up the new skill.
 
 **Alternative (without skills):** Append the contents of `SKILL.md` to a `CLAUDE.md` file: your project-root `CLAUDE.md` for a single project, or `~/.claude/CLAUDE.md` for all projects. Claude Code loads both automatically as instructions.
 
@@ -98,7 +98,7 @@ Codex CLI also supports native [Agent Skills](https://developers.openai.com/code
 
 Invoke it with `$deslop`, or let Codex activate it when the task matches the skill description. (Restart Codex if a freshly cloned skill doesn't appear.)
 
-> **Inside a session:** use the built-in `$skill-installer` skill: run `$skill-installer` and ask it to install deslop from the repository URL (it can pull skills from external repos); browse what's installed with `/skills`.
+> **Inside a session:** use the built-in `$skill-installer` skill: run `$skill-installer` and ask it to install deslop from the repository URL (it can pull skills from other repositories). Browse what's installed with `/skills`.
 
 **Alternative (always-on):** copy the body of `SKILL.md` (without the YAML frontmatter) into `AGENTS.md` at your repo root, or `~/.codex/AGENTS.md` for global guidance. Codex reads these as standing instructions.
 
@@ -146,4 +146,4 @@ Contributions are welcome: improve style guidance, expand rules, or add support 
 
 ## ⚖️ License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE`.
