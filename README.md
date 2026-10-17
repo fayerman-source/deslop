@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Style Guide: Plain English](https://img.shields.io/badge/Style_Guide-Plain_English-blue.svg)](https://www.plainlanguage.gov)
 
-![Deslop Hero Banner](assets/deslop_hero_banner.png)
+![Deslop Hero Banner](https://raw.githubusercontent.com/fayerman-source/deslop/main/assets/deslop_hero_banner.png)
 
 A portable skill for AI coding assistants and agent frameworks (including **Google Antigravity**, **Gemini CLI**, **Claude Code**, and others). It teaches the agent to audit, draft, and rewrite text into plain English, for **legal writing** and general prose alike.
 
