@@ -1,5 +1,3 @@
-
-
 # Deslop: Plain Legal Writing Skill for AI Agents
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,6 +8,8 @@
 A portable skill for AI coding assistants and agentic frameworks (including **Google Antigravity**, **Gemini CLI**, **Claude Code**, and others). It teaches the agent to audit, draft, and rewrite text into plain English, for **legal writing** and general prose alike.
 
 It applies the core rules of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to turn dense legalese and verbose **AI slop** into clear, readable prose.
+
+Built for lawyers, paralegals, in-house counsel, and law students who draft or review contracts, briefs, memos, opinions, client letters, demand letters, and policies. It also suits anyone cleaning up AI-generated text before it goes to a client or a court.
 
 > [!NOTE]
 > **Universal Applicability & Slop Mitigation**: The skill guards essential legal terms of art and quoted language, but its core rules (sentence architecture, active voice, omitting needless words) apply to **all professional, technical, and general writing** such as business memos, documentation, and correspondence. By enforcing direct, high-density language and banning boilerplate, it also cuts verbose, repetitive AI-generated text ("AI slop").
