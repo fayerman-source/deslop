@@ -5,7 +5,7 @@
 
 ![Deslop Hero Banner](https://raw.githubusercontent.com/fayerman-source/deslop/main/assets/deslop_hero_banner.png)
 
-A portable skill for AI coding assistants and agent frameworks (including **Google Antigravity**, **Gemini CLI**, **Claude Code**, and others). It teaches the agent to audit, draft, and rewrite text into plain English, for **legal writing** and general prose alike.
+A portable skill for AI coding assistants and agent frameworks (including **Google Antigravity**, **Claude Code**, **Codex CLI**, and others). It teaches the agent to audit, draft, and rewrite text into plain English, for **legal writing** and general prose alike.
 
 It applies the core rules of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to turn dense legalese and verbose **AI slop** into clear, readable prose.
 
@@ -47,7 +47,7 @@ npx skills add fayerman-source/deslop
 ```
 
 ### Antigravity CLI
-Antigravity CLI is Google's successor to Gemini CLI (which Google [retires on June 18, 2026](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories; clone the repository into one:
+Antigravity CLI replaced Gemini CLI on June 18, 2026 ([announcement](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)) and keeps native Agent Skills. It discovers a `SKILL.md` placed in its skills directories; clone the repository into one:
 
 * **Workspace-specific:**
   ```bash
@@ -58,9 +58,9 @@ Antigravity CLI is Google's successor to Gemini CLI (which Google [retires on Ju
   git clone https://github.com/fayerman-source/deslop.git ~/.gemini/skills/deslop
   ```
 
-The CLI discovers the skill automatically. If it doesn't appear, restart the CLI or reload skills. Antigravity's native `install` command is in flux during the transition, so check the [official docs](https://antigravity.google/docs) for current syntax. The manual clone above works either way.
+The CLI discovers the skill automatically. If it doesn't appear, restart the CLI or reload skills. Antigravity's native `install` command may still change, so check the [official docs](https://antigravity.google/docs) for current syntax. The manual clone above works either way.
 
-> **Legacy: Gemini CLI (until June 18, 2026):** Gemini CLI installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope). After that date Gemini CLI remains only for Gemini Code Assist Standard/Enterprise license holders.
+> **Gemini CLI (Code Assist Standard and Enterprise only):** If you still run Gemini CLI, it installs the same skill with `gemini skills install https://github.com/fayerman-source/deslop.git` (append `--scope workspace` for project scope).
 
 ---
 
