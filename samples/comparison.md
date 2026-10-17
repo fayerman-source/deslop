@@ -271,4 +271,4 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 ### After (Designation Kept)
 > On July 22, Defendant filed a letter-motion that begins: "Defendant has agreed to pay the arbitration fee." So Defendant also made a judicial admission.
 
-*(Note: Rule 6 prefers a real name, but this document defines "Defendant" as one of two defendants and offers no short name. Lowercasing it loses which defendant acted. The quoted sentence keeps its own capital either way under rule 3.)*
+*(Note: Rule 6 prefers a real name, but this document defines "Defendant" as one of two defendants and offers no short name. Lowercasing it loses which defendant acted. The quoted sentence keeps its own capital either way under rule 3. In an introductory summary, rule 1 still allows the everyday equivalent, such as "the landlord," before the body adopts the defined designation.)*

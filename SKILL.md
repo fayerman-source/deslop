@@ -5,7 +5,7 @@ description: Audits and rewrites legal writing, professional documentation, and 
 
 # Plain Legal Writing & Deslop Skill
 
-Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in-house counsel, without touching legal terms of art. It guides the agent in auditing, drafting, and revising briefs, contracts, memos, opinions, and client letters in clear, modern, readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
+Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in-house counsel, and preserves legal terms of art (section III governs the one lay-facing exception). It guides the agent in auditing, drafting, and revising briefs, contracts, memos, opinions, and client letters in clear, modern, readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
 
 ---
 
@@ -75,7 +75,7 @@ Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in
 
 ### 6. Naming Parties
 * **Rule**: Use actual names of people, companies, or clear descriptive terms (e.g., "Smith", "Apple", "the tenant", "the driver") instead of procedural or formal roles (e.g., "Appellant", "Plaintiff", "Party of the First Part").
-* **Defined Designations**: Keep a capitalized party designation that the caption or the document defines (e.g., *Acme Realty Corp. ("Defendant")*). Prefer a defined short name over *Plaintiff* or *Defendant* only when the document supplies one. Do not invent a name, and do not lowercase a defined designation: in a multi-party case it tells the reader which party acted.
+* **Defined Designations**: Keep a capitalized party designation that the caption or the document defines (e.g., *Acme Realty Corp. ("Defendant")*). Prefer a defined short name over *Plaintiff* or *Defendant* only when the document supplies one. Do not invent a name, and do not lowercase a defined designation: in a multi-party case it tells the reader which party acted. Rule 1 still governs introductory summaries and cover pages: there, an everyday equivalent (e.g., *the landlord*) is fine, as long as the document defines the designation before the body relies on it.
 * **Texas Pleading Style**: Eliminate 19th-century introductory pleading clauses (e.g., replace *"COMES NOW the Plaintiff..."* with *"Plaintiff John Doe states:"*).
 
 ---
