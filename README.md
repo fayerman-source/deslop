@@ -12,22 +12,25 @@ A portable skill for AI coding assistants and agentic frameworks (including **Go
 It applies the core rules of plain-language legal drafting (inspired by Bryan Garner's *Legal Writing in Plain English*) to turn dense legalese and verbose **AI slop** into clear, readable prose.
 
 > [!NOTE]
-> **Universal Applicability & Slop Mitigation**: The skill guards essential legal terms of art, but its core rules (sentence architecture, active voice, omitting needless words) apply to **all professional, technical, and general writing** such as business memos, documentation, and correspondence. By enforcing direct, high-density language and banning boilerplate, it also cuts verbose, repetitive AI-generated text ("AI slop").
+> **Universal Applicability & Slop Mitigation**: The skill guards essential legal terms of art and quoted language, but its core rules (sentence architecture, active voice, omitting needless words) apply to **all professional, technical, and general writing** such as business memos, documentation, and correspondence. By enforcing direct, high-density language and banning boilerplate, it also cuts verbose, repetitive AI-generated text ("AI slop").
 
 ---
 
 ## 🌟 Features
 
 * **Legalese Buster**: Automatically identifies and replaces archaic terms (*aforesaid*, *hereinafter*, *said*, *such*) and redundant doublets/triplets (*null and void*, *give, devise, and bequeath*).
-* **Sentence & S-V-O Optimization**: Reconstructs long, winding sentences to place subjects and verbs close together near the beginning, keeping sentence lengths to a readable 20-word average.
+* **Sentence & S-V-O Optimization**: Reconstructs long, winding sentences to place subjects and verbs close together near the beginning, keeping the writer's own sentences to a readable 20-word average.
+* **Quotations Stay Verbatim**: Never paraphrases quoted contract, statutory, or case language. It shortens a quotation only with a Bluebook ellipsis or bracketed alteration, and it edits the prose around the quotation instead.
+* **Professional Register**: Replaces slang and colloquial idioms with precise words of the same meaning, while leaving figurative terms of art (*on all fours*, *safe harbor*) alone.
 * **Nominalization De-bloater**: Converts buried verbs (like *make a decision* or *conduct an analysis of*) back into strong, active verbs (*decide*, *analyze*).
 * **Deep Issue Framing**: Restructures complex legal issues into the clean "premise-premise-question" format (under 75 words) rather than convoluted "Whether" statements.
-* **Rule Tabulation**: Formats dense multi-part legal rules, conditions, and lists into structured, parallel, and indented sub-items.
-* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days*).
+* **Rule Tabulation**: Formats dense multi-part legal rules, conditions, and lists into structured, parallel, and indented sub-items, and keeps short, simple series inline.
+* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days*) and uses digits for dates, money, percentages, section numbers, and deadlines a reader may act on.
 * **Gender-Neutral Drafting**: Replaces binary/clunky pronouns (*he or she*, *his or her*) with clean, inclusive, and modern gender-neutral phrasing.
 * **Oxford Comma Enforcement**: Uses the serial comma to prevent list ambiguity.
 * **Omitting Needless Words**: Strips redundant modifiers (e.g., *completely finish* -> *finish*), empty "throat-clearing" introductory phrases, and roundabout sentences to achieve maximum density.
 * **ABA Publication Style Compliance**: Standardizes restrictive/nonrestrictive clauses (*that* vs. *which*), quotation punctuation, date/name formatting, U.S. abbreviations, and "attorney fees" terminology.
+* **Court Rules First**: Applies its typography defaults (serif body, ragged right, no all-caps) only to attributes that no court rule, agency rule, or house style prescribes.
 * **Structural Formatting**: Redesigns long, dense walls of legal text using informative headings and lists.
 
 ---
@@ -123,7 +126,7 @@ Once installed, your AI agent will automatically detect and apply the skill when
   /deslop Audit this NDA agreement: [paste agreement text]
   ```
 
-* **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found," and the Section III row lists what the agent kept verbatim. The rewrite follows the table.
+* **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found." The Section III row lists the terms of art the agent kept verbatim, and the Section I row lists the quotations it kept. The rewrite follows the table.
 
 ---
 
