@@ -23,7 +23,7 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
 * **Self-Containment**: Ensure the reader can understand the issue without reading the rest of the document.
 
 ### 3. Sentence & Paragraph Architecture
-* **Sentence Length**: Maintain an average sentence length of 15 to 20 words. Avoid sentences exceeding 30 words.
+* **Sentence Length**: Maintain an average sentence length of 15 to 20 words. Avoid sentences exceeding 30 words. Measure your own prose only: exclude verbatim quotations and citations. Never paraphrase a quotation. If a sentence runs long because it carries a quotation, split the surrounding prose, or shorten the quotation with an ellipsis or bracketed alteration as Bluebook Rule 5 permits.
 * **Keep S-V-O Close**: Keep the subject, verb, and object close together, ideally near the beginning of the sentence. Do not insert long qualifying phrases between the subject and the verb.
 * **Topic Sentences & Transitions**: Start every paragraph with a topic sentence and use explicit transitions (bridges) between paragraphs.
 * **Tabulate Complex Rules (Tabulation)**: When a rule contains multiple conditions, dependencies, or consequences:
@@ -31,6 +31,8 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
   2. Use a vertical, numbered or bulleted list.
   3. Begin with an introductory clause ending with a colon.
   4. Ensure all sub-items are grammatically parallel.
+* **Keep Short Series Inline**: Tabulate when the items are long or carry their own conditions. Keep a short, simple series (a few words per item) inline in one sentence. A vertical list adds length, so do not convert brief lists. This narrows the Tabulate rule: keep a tabulated list if other text cross-references its items or if a trailing modifier applies to the series (rule 13).
+* **Never Change Quoted Words**: Quoted contract language, statutes, rules, testimony, and case excerpts keep their words, including *shall*, doublets, and double-entry numbers. This applies to block quotations too. You may shorten a quotation with an ellipsis, alter it with brackets, or quote less of the source, as Bluebook Rule 5 permits. Never paraphrase inside a quotation. Every rule in this skill, except the quotation-formatting rules in rule 17, applies to your own prose around the quotation, not to the quotation.
 
 ---
 
@@ -54,6 +56,12 @@ This skill guides the agent in auditing, drafting, and revising legal documents 
   * *employs, engages, and hires* $\rightarrow$ **employs**
   * *fit and proper* $\rightarrow$ **fit**
   * *by and between* $\rightarrow$ **between**
+* **Avoid Colloquial Idioms (Register)**: Plain English is not casual English. In legal and professional documents, replace slang, idioms, and cute lead-ins with plain, precise words that carry the same meaning. Do not add facts or conclusions the source does not state:
+  * *at the end of the day* $\rightarrow$ **ultimately**
+  * *a slam dunk* $\rightarrow$ **a strong claim**
+  * *move the needle* $\rightarrow$ **change the outcome**
+  * *set expectations with the client* $\rightarrow$ **tell the client what to expect**
+  * Do not replace legal terms of art that use figurative language (e.g., *on all fours*, *piercing the corporate veil*, *fruit of the poisonous tree*, *safe harbor*, *clean hands*); see section III. Short openers like *But* and *So* (rule 14) are not colloquialisms.
 
 ### 5. Zombie Nouns (Nominalizations)
 * **Rule**: Identify abstract nouns ending in suffixes like *-tion, -ment, -ance, -ity* that are paired with weak helper verbs (e.g., *make, take, reach, give, have, provide, conduct*). Reverse them into their root active verbs:
@@ -94,7 +102,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
   * *proximate cause* - legal cause distinguishing liability from mere factual causation
 
 ### 8. Permitted Lay-Facing Modernization
-* **Preponderance of the Evidence**: In lay-facing documents (like jury instructions or consumer disclosures), replace *"preponderance of the evidence"* with the California CACI-approved plain language equivalent: **"more likely to be true than not true."** Keep the original phrase in formal briefs or motions.
+* **Preponderance of the Evidence**: In lay-facing documents (like jury instructions or consumer disclosures), replace *"preponderance of the evidence"* with the California CACI-approved plain language equivalent: **"more likely to be true than not true."** Keep the original phrase in formal briefs or motions. This applies to your own restatement; quoted instruction or statutory text stays verbatim (rule 3).
 
 ### 9. Statutory Interpretation Canons
 * **Ejusdem Generis**: When a general word follows specific words in a list, interpret the general word in context of the specific ones (e.g., "cars, trucks, and other vehicles" - "other vehicles" limited to transportation).
@@ -106,7 +114,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 ## IV. Syntactic Pitfalls & Ambiguity Resolution
 
 ### 10. Eradication of "Shall"
-* **Rule**: Complete eradication of the word "shall." Replace it based on the exact category of meaning:
+* **Rule**: Complete eradication of the word "shall" outside quotations (see rule 3). Replace it based on the exact category of meaning:
   * **Obligation/Duty**: Use **must** (e.g., *"The Tenant must pay the rent"*).
   * **Future Action/Prediction**: Use **will** (e.g., *"The lease will terminate on Dec 31"*).
   * **Permission**: Use **may** (e.g., *"The Tenant may keep a pet"*).
@@ -142,6 +150,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 ## V. Editorial Standards & Typography
 
 ### 16. Typographic Design & Layout Rules (SEC Standards)
+* **Court Rules and House Style Control**: If a court rule, agency rule, statute, or the firm's house style prescribes any formatting attribute (typeface, type size, alignment, spacing, margins, or emphasis), follow it for that attribute. A court rule, agency rule, or statute overrides house style. Apply the defaults below to every attribute no such rule covers.
 * **Font Selection**: Enforce Serif fonts (such as **Garamond**, **Palatino**, or **Georgia**) for extensive body text to improve tracking. Prohibit Times New Roman as a default. Use Sans Serif (such as **Arial** or **Calibri**) for headings.
 * **Margin Alignment**: Enforce Left-Aligned (Ragged Right). Prohibit fully justified text.
 * **Emphasis**: Prohibit all-caps and underlining for emphasis. Use bold styling sparingly (exception: conspicuous UCC warranty disclaimers).
@@ -165,6 +174,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 
 ### 19. Numerical Consistency
 * **Rule**: Spell out numbers 1-9; use digits for 10+. In any single list or series, if one number is 10+ and rendered as digits, all numbers in that list must be digits.
+* **Legal Carve-Out**: Use digits at any size for dates, money, percentages, section and rule numbers, measurements and ranges (e.g., *floors 4 through 10*), and operative time periods (e.g., *cure within 5 business days*). Precision outweighs style for figures a reader may act on.
 
 ### 20. Eradication of "Elegant Variation"
 * **Rule**: Maintain absolute terminological consistency. If a contract refers to a *"vehicle"* in one section, do not refer to it as an *"automobile"* or *"car"* in another. Locking vocabulary prevents accidental changes in legal meaning.
@@ -182,12 +192,12 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 When asked to audit or rewrite legal text using this skill, perform the following steps:
 
 1. **Analysis & Diagnostics**:
-   * Identify specific issues in the original text (e.g., sentence lengths, passive voice, nominalizations, legalese words, double-entry numbers, unnecessary filler words, incorrect punctuation of quotation marks or suffixes, incorrect "that/which" usage).
+   * Identify specific issues in the original text (e.g., sentence lengths, passive voice, nominalizations, legalese words, colloquial idioms, double-entry numbers, unnecessary filler words, incorrect punctuation of quotation marks or suffixes, incorrect "that/which" usage). Apply every check to the writer's own prose only, not inside quotations. The one exception is the quotation-punctuation mechanics in rule 17.
    * Estimate the readability improvements (e.g., reducing word count, shortening sentences).
 
 2. **Contrast & Feedback**:
    * Present an audit table with **one row for every section (I–VI)**, in order. Do not omit a section. If a section has no violations, write **"none found"** in its row. The table must show what you *checked*, not only what you *found*.
-   * For section III, list the terms of art you kept verbatim (e.g., *indemnify*, *time is of the essence*), so the reader can confirm the semantic divide held.
+   * For section III, list the terms of art you kept verbatim (e.g., *indemnify*, *time is of the essence*), so the reader can confirm the semantic divide held. For section I, list the quotations you kept verbatim or shortened only by ellipsis or brackets.
    * Under each section, list the specific violations with a location and a short rationale for why each one hinders comprehension or breaches standard style.
    * Do not invent a violation to fill a row. "None found" is a correct, complete answer.
 
