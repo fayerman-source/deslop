@@ -23,7 +23,7 @@ It applies the core rules of plain-language legal drafting (inspired by Bryan Ga
 * **Nominalization De-bloater**: Converts buried verbs (like *make a decision* or *conduct an analysis of*) back into strong, active verbs (*decide*, *analyze*).
 * **Deep Issue Framing**: Restructures complex legal issues into the clean "premise-premise-question" format (under 75 words) rather than convoluted "Whether" statements.
 * **Rule Tabulation**: Formats dense multi-part legal rules, conditions, and lists into structured, parallel, and indented sub-items.
-* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days* or *three days*).
+* **Double-Entry Number Clean-up**: Eliminates parenthetical repetition (e.g., *three (3) days* -> *3 days*).
 * **Gender-Neutral Drafting**: Replaces binary/clunky pronouns (*he or she*, *his or her*) with clean, inclusive, and modern gender-neutral phrasing.
 * **Oxford Comma Enforcement**: Uses the serial comma to prevent list ambiguity.
 * **Omitting Needless Words**: Strips redundant modifiers (e.g., *completely finish* -> *finish*), empty "throat-clearing" introductory phrases, and roundabout sentences to achieve maximum density.
