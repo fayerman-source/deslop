@@ -75,6 +75,7 @@ Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in
 
 ### 6. Naming Parties
 * **Rule**: Use actual names of people, companies, or clear descriptive terms (e.g., "Smith", "Apple", "the tenant", "the driver") instead of procedural or formal roles (e.g., "Appellant", "Plaintiff", "Party of the First Part").
+* **Defined Designations**: Keep a capitalized party designation that the caption or the document defines (e.g., *Acme Realty Corp. ("Defendant")*). Prefer a defined short name over *Plaintiff* or *Defendant* only when the document supplies one. Do not invent a name, and do not lowercase a defined designation: in a multi-party case it tells the reader which party acted.
 * **Texas Pleading Style**: Eliminate 19th-century introductory pleading clauses (e.g., replace *"COMES NOW the Plaintiff..."* with *"Plaintiff John Doe states:"*).
 
 ---

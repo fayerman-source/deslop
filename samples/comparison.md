@@ -258,3 +258,17 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 > *The agent keeps 14-point Century Schoolbook as the court rule requires, still applies the ragged-right default because the rule says nothing about alignment, and applies the text rules (word choice, sentence length, structure).*
 
 *(Note: The typography defaults in rule 16 apply to each attribute that no court rule, agency rule, statute, or house style prescribes. A court rule overrides house style.)*
+
+---
+
+## 20. Defined Party Designations
+
+*The caption names two defendants and defines Acme Realty Corp. as "Defendant." The document supplies no shorter name.*
+
+### Before (Designation Lowercased)
+> On July 22, the defendant filed a letter-motion that begins: "Defendant has agreed to pay the arbitration fee." So the defendant also made a judicial admission.
+
+### After (Designation Kept)
+> On July 22, Defendant filed a letter-motion that begins: "Defendant has agreed to pay the arbitration fee." So Defendant also made a judicial admission.
+
+*(Note: Rule 6 prefers a real name, but this document defines "Defendant" as one of two defendants and offers no short name. Lowercasing it loses which defendant acted. The quoted sentence keeps its own capital either way under rule 3.)*
