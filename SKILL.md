@@ -5,7 +5,7 @@ description: Audits and rewrites legal writing, professional documentation, and 
 
 # Plain Legal Writing & Deslop Skill
 
-This skill guides the agent in auditing, drafting, and revising legal documents (briefs, contracts, memos, opinions, and letters) using clear, modern, and readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
+Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in-house counsel, without touching legal terms of art. It guides the agent in auditing, drafting, and revising briefs, contracts, memos, opinions, and client letters in clear, modern, readable English. It combines the tenets of plain English (e.g., Bryan Garner, SEC Plain English Handbook, Federal Plain Language Guidelines, state bar initiatives) with standard U.S. editorial mechanics (ABA Section of Litigation).
 
 ---
 
