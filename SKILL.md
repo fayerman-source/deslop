@@ -24,6 +24,8 @@ Rewrites legalese and AI slop into plain English for lawyers, paralegals, and in
 
 ### 3. Sentence & Paragraph Architecture
 * **Sentence Length**: Maintain an average sentence length of 15 to 20 words. Avoid sentences exceeding 30 words. Measure your own prose only: exclude verbatim quotations and citations. Never paraphrase a quotation. If a sentence runs long because it carries a quotation, split the surrounding prose, or shorten the quotation with an ellipsis or bracketed alteration as Bluebook Rule 5 permits.
+* **Count Without Citations**: Before you count a sentence, set aside its quoted words and its citations: case names and reporter cites, statute and rule cites, record cites (e.g., *Compl. ¶ 34*, *Ex. A § 12.3*), and parentheticals that only cite. Count the words that remain. A sentence that runs long only because of its citations is not a long sentence.
+* **A Long Sentence Is a Flag, Not an Order**: Split a long sentence only if each new sentence keeps its conditions, exceptions, and qualifications attached to the proposition they govern. A split must not put a condition in one sentence and its consequence in the next. It must not leave a qualifier that the reader could apply to the wrong clause. If it would, keep the sentence whole or tabulate it under the Tabulate rule below. In the audit, list each long sentence you kept whole and say why.
 * **Keep S-V-O Close**: Keep the subject, verb, and object close together, ideally near the beginning of the sentence. Do not insert long qualifying phrases between the subject and the verb.
 * **Topic Sentences & Transitions**: Start every paragraph with a topic sentence and use explicit transitions (bridges) between paragraphs.
 * **Tabulate Complex Rules (Tabulation)**: When a rule contains multiple conditions, dependencies, or consequences:
@@ -152,6 +154,7 @@ An AI drafting agent must never dilute true "terms of art": expressions with an 
 
 ### 16. Typographic Design & Layout Rules (SEC Standards)
 * **Court Rules and House Style Control**: If a court rule, agency rule, statute, or the firm's house style prescribes any formatting attribute (typeface, type size, alignment, spacing, margins, or emphasis), follow it for that attribute. A court rule, agency rule, or statute overrides house style. Apply the defaults below to every attribute no such rule covers.
+* **Generated Documents**: If a template or document-assembly tool sets the final typography, edit only the words. Do not add font, alignment, or spacing markup to the source to impose the defaults below; the tool will override it or produce mixed formatting. Note any conflict with a default in the audit instead.
 * **Font Selection**: Enforce Serif fonts (such as **Garamond**, **Palatino**, or **Georgia**) for extensive body text to improve tracking. Prohibit Times New Roman as a default. Use Sans Serif (such as **Arial** or **Calibri**) for headings.
 * **Margin Alignment**: Enforce Left-Aligned (Ragged Right). Prohibit fully justified text.
 * **Emphasis**: Prohibit all-caps and underlining for emphasis. Use bold styling sparingly (exception: conspicuous UCC warranty disclaimers).
@@ -197,7 +200,7 @@ When asked to audit or rewrite legal text using this skill, perform the followin
    * Estimate the readability improvements (e.g., reducing word count, shortening sentences).
 
 2. **Contrast & Feedback**:
-   * Present an audit table with **one row for every section (I–VI)**, in order. Do not omit a section. If a section has no violations, write **"none found"** in its row. The table must show what you *checked*, not only what you *found*.
+   * Present an audit table with **one row for every section (I–VI)**, in order. Do not omit a section. If a section has no violations, write **"none found"** in its row. The table must show what you *checked*, not only what you *found*. In the quick profile, use the profile's table instead (see Quick Profile, below).
    * For section III, list the terms of art you kept verbatim (e.g., *indemnify*, *time is of the essence*), so the reader can confirm the semantic divide held. For section I, list the quotations you kept verbatim or shortened only by ellipsis or brackets.
    * Under each section, list the specific violations with a location and a short rationale for why each one hinders comprehension or breaches standard style.
    * Do not invent a violation to fill a row. "None found" is a correct, complete answer.
@@ -205,3 +208,15 @@ When asked to audit or rewrite legal text using this skill, perform the followin
 3. **Plain English Revision**:
    * Provide the rewritten version of the text.
    * Highlight how the revisions improve readability and comply with standard mechanics while retaining the exact legal meaning.
+
+---
+
+## Quick Profile: Legal Memos, Briefs, and Letters
+
+Use the quick profile when the user asks for a fast mechanics pass on a legal memo, brief, or letter, or when another review already covers structure and tone.
+
+1. **Rules to run**: 3 (sentence length and S-V-O), 4 (word choice, wordy locutions, doublets, and idioms), 5 (nominalizations), 10 (*shall*), 11 (*and/or*), 12 (provisos), 13 (trailing modifiers), 14 (sentence openers), 15 (*such* and *the same*), 17 (punctuation and style), 19 (numbers), and 20 (elegant variation).
+2. **Always**: Section III. Keep every term of art and every quotation verbatim.
+3. **Skip**: Rules 1, 2, 6, 16, 18, 21, and 22. They cover structure, issue statements, party names, typography, readability scores, dialogue tags, and tone, which the quick profile leaves to the user or to another review.
+4. **Audit table**: Give one row for each rule you ran and one row for section III. End with a row that names the skipped rules, so the reader knows what you did not check.
+5. **Revision**: Rewrite only what the profile's rules require.

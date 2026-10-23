@@ -259,6 +259,12 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 
 *(Note: The typography defaults in rule 16 apply to each attribute that no court rule, agency rule, statute, or house style prescribes. A court rule overrides house style.)*
 
+### Before (Agent Edits Typography a Template Controls)
+> *A memo is written in Markdown and rendered by the firm's template, which sets Times New Roman and justified text. The agent adds font and alignment markup to the Markdown to force Garamond and ragged-right.*
+
+### After (Words Edited; Template Left Alone)
+> *The agent edits only the words. It notes in the audit that the template's typeface and alignment differ from the rule 16 defaults and leaves that change to whoever controls the template.*
+
 ---
 
 ## 20. Defined Party Designations
@@ -272,3 +278,58 @@ This file provides real-world examples of traditional, complex legal text ("Befo
 > On July 22, Defendant filed a letter-motion that begins: "Defendant has agreed to pay the arbitration fee." So Defendant also made a judicial admission.
 
 *(Note: Rule 6 prefers a real name, but this document defines "Defendant" as one of two defendants and offers no short name. Lowercasing it loses which defendant acted. The quoted sentence keeps its own capital either way under rule 3. In an introductory summary, rule 1 still allows the everyday equivalent, such as "the landlord," before the body adopts the defined designation.)*
+
+---
+
+## 21. Counting Sentence Length Around Citations
+
+### Before (Counted With Its Citations: 32 Words)
+> Either party may end the supply agreement on 90 days' notice (Compl. ¶ 2; Ex. A § 12.3), and the buyer gave 95 days' notice (Compl. ¶ 34; Ex. B at 1).
+
+*Why it is flagged by mistake*:
+* Counted with its citations, the sentence runs 32 words and looks too long.
+* Counted correctly, without the citations, it runs 18 words.
+
+### After (Counted Correctly; Kept as Written)
+> Either party may end the supply agreement on 90 days' notice (Compl. ¶ 2; Ex. A § 12.3), and the buyer gave 95 days' notice (Compl. ¶ 34; Ex. B at 1).
+
+*(Note: Rule 3 measures the writer's own prose. Set the citations aside before counting. This sentence needs no change.)*
+
+---
+
+## 22. Keep Conditions Attached When Splitting
+
+### Before (33 Words; Split Strands the Conditions)
+> The buyer may withhold payment of a disputed invoice if it notifies the supplier of the dispute in writing within 10 days of receiving the invoice and pays the undisputed amount when due.
+
+*A careless split*:
+> The buyer may withhold payment of a disputed invoice. It must notify the supplier of the dispute in writing within 10 days of receiving the invoice and pay the undisputed amount when due.
+
+*Why the split fails*:
+* The first sentence now grants an unconditional right.
+* The conditions moved to a new sentence, where they read as separate duties instead of conditions on the right.
+
+### After (Conditions Kept With the Right)
+> The buyer may withhold payment of a disputed invoice if it:
+> 1. notifies the supplier of the dispute in writing within 10 days of receiving the invoice; and
+> 2. pays the undisputed amount when due.
+
+*(Note: Rule 3 treats a long sentence as a flag, not an order. Tabulating keeps both conditions attached to the right they limit.)*
+
+---
+
+## 23. Quick Profile for Legal Memos, Briefs, and Letters
+
+### Request
+> *Run the deslop quick profile on this brief.*
+
+### Audit Table (Excerpt)
+| Rule | Result |
+|---|---|
+| 3. Sentence length | 2 sentences over 30 words after citations were set aside: split 1; kept 1 whole because a split would detach its condition |
+| 4. Word choice | "prior to" (p. 3) changed to "before" |
+| 10. *Shall* | none found |
+| III. Terms of art | kept verbatim: *time is of the essence*, *best efforts* |
+| Skipped by the profile | rules 1, 2, 6, 16, 18, 21, and 22 |
+
+*(Note: The quick profile reports only the rules it runs and names the rules it skipped, so the reader knows what was not reviewed.)*
