@@ -127,6 +127,7 @@ Once installed, your AI agent will automatically detect and apply the skill when
   ```
 
 * **What you get back**: an audit table with one row for each rule section (I–VI), so you can see what the agent checked, not only what it found. Sections with no violations say "none found." The Section III row lists the terms of art the agent kept verbatim, and the Section I row lists the quotations it kept. The rewrite follows the table.
+* **Quick profile**: For a fast mechanics pass on a memo, brief, or letter, ask for the quick profile. Its table covers only the rules it runs and names the rules it skipped.
 
 ---
 
